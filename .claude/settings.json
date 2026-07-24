@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "Bash(gh auth *)",
-      "Bash(git --version)"
+      "Bash(git --version)",
+      "PowerShell(Get-Command gh -ErrorAction SilentlyContinue)",
+      "PowerShell(winget install --id GitHub.cli -e --accept-source-agreements --accept-package-agreements)",
+      "PowerShell(refreshenv 2>$null)",
+      "PowerShell(gh --version 2>&1)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(npx --yes shadcn@latest init -d -y 2>&1)",
+      "PowerShell(npx --yes shadcn@latest add card input textarea label select badge sheet accordion -y 2>&1)",
+      "PowerShell(npm install motion 2>&1)",
+      "PowerShell(npm run build 2>&1)",
+      "PowerShell(npm run dev 2>&1)"
     ]
   }
 }
