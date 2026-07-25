@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Target, Heart, Globe2, ShieldCheck } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { FadeIn, Stagger, StaggerItem } from "@/components/motion/fade-in";
@@ -81,6 +82,20 @@ export default function AboutPage() {
           </FadeIn>
         </div>
       </section>
+
+      {/* Banner image */}
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <FadeIn className="relative -mt-6 overflow-hidden rounded-2xl border border-border shadow-sm">
+          <Image
+            src="/images/about.jpg"
+            alt="An online Quran lesson set up on a desk with an open Quran and prayer beads"
+            width={1376}
+            height={768}
+            sizes="(max-width: 1152px) 100vw, 1152px"
+            className="h-auto w-full object-cover"
+          />
+        </FadeIn>
+      </div>
 
       {/* Values */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">

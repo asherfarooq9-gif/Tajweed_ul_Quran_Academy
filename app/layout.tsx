@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Antic, Geist } from "next/font/google";
+import { Amiri, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { ScrollProgress } from "@/components/scroll-progress";
 import { siteConfig } from "@/lib/site-config";
 
-const geistSans = Geist({
+const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const antic = Antic({
-  weight: "400",
+const amiri = Amiri({
+  weight: ["400", "700"],
   variable: "--font-antic",
   subsets: ["latin"],
 });
@@ -66,7 +67,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${antic.variable} h-full`}
+      className={`${inter.variable} ${amiri.variable} h-full`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
@@ -74,6 +75,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <ScrollProgress />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

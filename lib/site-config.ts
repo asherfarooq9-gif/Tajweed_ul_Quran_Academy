@@ -5,6 +5,10 @@ export type Course = {
   duration: string;
   description: string;
   highlights: string[];
+  /** Optional card image, e.g. "/images/courses/noorani-qaida.jpg". */
+  image?: string;
+  /** Optional object-position for the card image, e.g. "object-[50%_30%]". */
+  imagePosition?: string;
 };
 
 export type NavLink = {
@@ -22,8 +26,8 @@ export const siteConfig = {
   // TODO: replace with the academy's real contact details.
   email: "info@tajweedulquran.academy",
   // WhatsApp number in international format, digits only (no +, spaces or dashes).
-  whatsapp: "10000000000",
-  phoneDisplay: "+1 (000) 000-0000",
+  whatsapp: "923430565179",
+  phoneDisplay: "+92 343 0565179",
   hours: "Open daily · 7:00 AM – 11:00 PM (GMT)",
 } as const;
 
@@ -40,6 +44,7 @@ export const courses: Course[] = [
     title: "Noorani Qaida",
     level: "Beginner",
     duration: "2–4 months",
+    image: "/images/courses/noorani-qaida.jpg",
     description:
       "The essential first step. Master Arabic letters, their sounds, and joining rules — the foundation for reading the Quran correctly.",
     highlights: [
@@ -53,6 +58,8 @@ export const courses: Course[] = [
     title: "Nazra Quran with Tajweed",
     level: "All levels",
     duration: "Ongoing",
+    image: "/images/courses/nazra-quran.jpg",
+    imagePosition: "object-[50%_66%]",
     description:
       "Read the entire Quran fluently applying Tajweed rules, with your teacher correcting every letter and sound in real time.",
     highlights: [
@@ -66,6 +73,8 @@ export const courses: Course[] = [
     title: "Hifz — Quran Memorization",
     level: "Intermediate",
     duration: "2–4 years",
+    image: "/images/courses/hifz-quran.jpg",
+    imagePosition: "object-[50%_45%]",
     description:
       "A structured memorization program with daily lessons, revision cycles, and one-on-one accountability to become a Hafiz.",
     highlights: [
@@ -79,6 +88,7 @@ export const courses: Course[] = [
     title: "Tajweed Rules Mastery",
     level: "Intermediate",
     duration: "3–6 months",
+    image: "/images/courses/tajweed-rules.jpg",
     description:
       "A dedicated theory-and-practice course covering every rule of Tajweed so your recitation matches the way the Quran was revealed.",
     highlights: [
@@ -92,6 +102,7 @@ export const courses: Course[] = [
     title: "Quran for Kids",
     level: "Ages 4+",
     duration: "Flexible",
+    image: "/images/courses/kids-quran.jpg",
     description:
       "Gentle, engaging lessons designed for young learners — patient teachers, short sessions, and lots of encouragement.",
     highlights: [
@@ -102,15 +113,30 @@ export const courses: Course[] = [
   },
   {
     slug: "quran-translation",
-    title: "Quran Translation & Tafsir",
+    title: "Quran Translation",
     level: "Advanced",
     duration: "Ongoing",
+    image: "/images/courses/quran-translation.jpg",
     description:
-      "Move beyond recitation to understanding — word-by-word meaning and the context of revelation, so the Quran speaks to your heart.",
+      "Move beyond recitation to understanding — learn the word-by-word meaning of the Quran so every verse you read speaks to your heart.",
     highlights: [
       "Word-by-word translation",
-      "Context of revelation (Tafsir)",
-      "Reflection & practical lessons",
+      "Build a Quranic Arabic vocabulary",
+      "Understand what you recite",
+    ],
+  },
+  {
+    slug: "tafseer",
+    title: "Tafseer ul Quran",
+    level: "Advanced",
+    duration: "Ongoing",
+    image: "/images/courses/tafseer.jpg",
+    description:
+      "Study the deeper meaning of the Quran — the context of revelation, explanation of verses, and the lessons and wisdom behind them.",
+    highlights: [
+      "Context of revelation (Asbab al-Nuzul)",
+      "Verse-by-verse explanation",
+      "Lessons, wisdom & reflection",
     ],
   },
 ];

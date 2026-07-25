@@ -13,7 +13,31 @@
       "PowerShell(npx --yes shadcn@latest add card input textarea label select badge sheet accordion -y 2>&1)",
       "PowerShell(npm install motion 2>&1)",
       "PowerShell(npm run build 2>&1)",
-      "PowerShell(npm run dev 2>&1)"
+      "PowerShell(npm run dev 2>&1)",
+      "mcp__claude_ai_higgsfield__balance",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth status)",
+      "PowerShell(npx --yes skills add higgsfield-ai/skills 2>&1)",
+      "PowerShell($c = Get-Command claude -ErrorAction SilentlyContinue; if \\($c\\) { $c.Source } else { \"claude CLI not found on PATH\" })",
+      "PowerShell(& \"C:\\\\Users\\\\Alli\\\\.local\\\\bin\\\\claude.exe\" mcp add --transport http higgsfield https://mcp.higgsfield.ai/mcp 2>&1)",
+      "mcp__claude_ai_higgsfield__generate_video",
+      "mcp__claude_ai_higgsfield__generate_image",
+      "mcp__claude_ai_higgsfield__job_status",
+      "Bash(mkdir -p public/images/courses)",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260724_214546_f5bcb6f3-4323-47b1-b522-c961a581e8c8.png\" -o public/images/hero.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{size_download}\\\\n\" \"http://localhost:3000/images/hero.png\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:3000/_next/image?url=%2Fimages%2Fhero.png&w=828&q=75\")",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_071308_4fcb1e02-2b5b-40f6-a4c9-ca37cc17dd2c.png\" -o public/images/hero-1.png)",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_071311_2467b9ad-f1b9-4110-b94d-20fe814f7e49.png\" -o public/images/hero-2.png)",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_071313_c1d757b1-0008-419d-8de4-d200ea6f39f2.png\" -o public/images/hero-3.png)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(mkdir -p public/images/courses public/images/teachers public/images/testimonials)",
+      "Bash(touch public/images/courses/.gitkeep public/images/teachers/.gitkeep public/images/testimonials/.gitkeep)",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_075902_dc6bf09c-d0db-405d-8bb6-dc1c02e363b0.png\" -o public/images/courses/tajweed-rules.jpg)",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_075904_e533de8c-4ef4-444a-9c45-b8d6535d51b6.png\" -o public/images/courses/kids-quran.jpg)",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_075907_413b1f12-901b-401b-a263-a0deec1beb00.png\" -o public/images/courses/quran-translation.jpg)",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_075909_35650476-1b2f-4ae2-9937-2b49206804d0.png\" -o public/images/courses/tafseer.jpg)",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_080105_ffbfd09e-4096-49e2-8247-f848ac9f4f2a.png\" -o public/images/about.jpg)",
+      "Bash(awk '{print $5,$9}')"
     ]
   }
 }
