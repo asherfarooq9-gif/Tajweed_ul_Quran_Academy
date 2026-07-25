@@ -42,7 +42,8 @@
       "PowerShell($env:GIT_TERMINAL_PROMPT=0; git -C \"D:\\\\Websites\\\\Tajweed_ul_Quran_Academy\" push -u origin main 2>&1 | Select-Object -Last 25)",
       "PowerShell(npx --yes plugins add vercel/vercel-plugin 2>&1)",
       "PowerShell($env:PATH = \"C:\\\\Users\\\\Alli\\\\.local\\\\bin;$env:PATH\"; npx --yes plugins add vercel/vercel-plugin --target claude 2>&1 | Select-Object -Last 30)",
-      "PowerShell($env:PATH = \"C:\\\\Users\\\\Alli\\\\.local\\\\bin;$env:PATH\"; npx --yes plugins add vercel/vercel-plugin --target claude-code 2>&1 | Select-Object -Last 40)"
+      "PowerShell($env:PATH = \"C:\\\\Users\\\\Alli\\\\.local\\\\bin;$env:PATH\"; npx --yes plugins add vercel/vercel-plugin --target claude-code 2>&1 | Select-Object -Last 40)",
+      "PowerShell(git -C \"D:\\\\Websites\\\\Tajweed_ul_Quran_Academy\" push origin main 2>&1)"
     ]
   }
 }
