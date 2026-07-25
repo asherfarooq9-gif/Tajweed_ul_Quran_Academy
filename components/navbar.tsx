@@ -41,10 +41,10 @@ export function Navbar() {
     >
       <nav
         aria-label="Main navigation"
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6"
+        className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6"
       >
         <Link href="/" className="flex items-center gap-2.5">
-          <Logo className="h-12 w-12" />
+          <Logo className="h-16 w-16" />
           <span className="font-heading text-lg leading-none text-foreground">
             {siteConfig.shortName}
           </span>
