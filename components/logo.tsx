@@ -19,7 +19,7 @@ export function Logo({ className }: LogoProps) {
         alt="Tajweed ul Quran Academy"
         fill
         sizes="48px"
-        className="object-cover object-[50%_18%] scale-[1.9]"
+        className="object-cover object-[50%_32%] scale-[1.55]"
       />
     </span>
   );

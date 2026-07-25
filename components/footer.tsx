@@ -19,7 +19,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
         <div className="md:col-span-1">
           <Link href="/" className="flex items-center gap-2.5">
-            <Logo className="h-9 w-9" />
+            <Logo className="h-12 w-12" />
             <span className="font-heading text-lg leading-none">
               {siteConfig.shortName}
             </span>

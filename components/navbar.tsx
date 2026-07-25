@@ -44,7 +44,7 @@ export function Navbar() {
         className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6"
       >
         <Link href="/" className="flex items-center gap-2.5">
-          <Logo className="h-9 w-9" />
+          <Logo className="h-12 w-12" />
           <span className="font-heading text-lg leading-none text-foreground">
             {siteConfig.shortName}
           </span>
