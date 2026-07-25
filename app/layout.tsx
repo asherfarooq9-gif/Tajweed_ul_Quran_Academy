@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Amiri, Inter } from "next/font/google";
+import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -11,8 +11,8 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const amiri = Amiri({
-  weight: ["400", "700"],
+const outfit = Outfit({
+  weight: ["400", "500", "600", "700"],
   variable: "--font-antic",
   subsets: ["latin"],
 });
@@ -67,7 +67,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${amiri.variable} h-full`}
+      className={`${inter.variable} ${outfit.variable} h-full`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">

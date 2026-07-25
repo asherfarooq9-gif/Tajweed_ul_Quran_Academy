@@ -37,7 +37,12 @@
       "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_075907_413b1f12-901b-401b-a263-a0deec1beb00.png\" -o public/images/courses/quran-translation.jpg)",
       "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_075909_35650476-1b2f-4ae2-9937-2b49206804d0.png\" -o public/images/courses/tafseer.jpg)",
       "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_391ZkTp9VTHUN78s061yCaADUY2/hf_20260725_080105_ffbfd09e-4096-49e2-8247-f848ac9f4f2a.png\" -o public/images/about.jpg)",
-      "Bash(awk '{print $5,$9}')"
+      "Bash(awk '{print $5,$9}')",
+      "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth status 2>&1)",
+      "PowerShell($env:GIT_TERMINAL_PROMPT=0; git -C \"D:\\\\Websites\\\\Tajweed_ul_Quran_Academy\" push -u origin main 2>&1 | Select-Object -Last 25)",
+      "PowerShell(npx --yes plugins add vercel/vercel-plugin 2>&1)",
+      "PowerShell($env:PATH = \"C:\\\\Users\\\\Alli\\\\.local\\\\bin;$env:PATH\"; npx --yes plugins add vercel/vercel-plugin --target claude 2>&1 | Select-Object -Last 30)",
+      "PowerShell($env:PATH = \"C:\\\\Users\\\\Alli\\\\.local\\\\bin;$env:PATH\"; npx --yes plugins add vercel/vercel-plugin --target claude-code 2>&1 | Select-Object -Last 40)"
     ]
   }
 }

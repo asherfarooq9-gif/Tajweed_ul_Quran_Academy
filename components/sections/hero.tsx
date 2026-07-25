@@ -34,7 +34,7 @@ export function Hero() {
   );
 
   return (
-    <section className="relative flex min-h-[92vh] items-center overflow-hidden">
+    <section className="relative flex min-h-[78vh] items-center overflow-hidden sm:min-h-[86vh] lg:min-h-[92vh]">
       {/* Background image slideshow */}
       <HeroSlideshow />
 
